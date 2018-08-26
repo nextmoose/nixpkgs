@@ -7,8 +7,8 @@ stdenv.mkDerivation {
     sha256 = "1i6vbjr3aybr2bd1nc7yghqnv2j9f0iwpq0q5kbx2q2c4vrhy94n";
   };
   installPhase = ''
-    mkdir -p ${out}/bin &&
-        cp launch.sh ${out}/launch-development-environment &&
-	chmod 0555 ${out}/launch-development-environment
+    mkdir -p $out/bin &&
+        cp launch.sh $out/bin/launch-development-environment &&
+	chmod 0555 $out/bin/launch-development-environment
   '';
-};
+}
