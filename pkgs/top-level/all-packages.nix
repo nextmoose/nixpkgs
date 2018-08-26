@@ -22273,4 +22273,6 @@ with pkgs;
   doing = callPackage ../applications/misc/doing  { };
 
   undervolt = callPackage ../os-specific/linux/undervolt { };
+
+  launch-development-environment = callPackage ../custom/development-environment { };
 }
