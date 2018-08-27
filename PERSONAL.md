@@ -21,5 +21,5 @@ should be an error because you did not specify any of the required
 switches for the script.
 
 ```
-nix-env -i 
+nix-env -i $(result)
 ```
