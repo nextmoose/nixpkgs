@@ -11,9 +11,6 @@ stdenv.mkDerivation {
         mkdir $out/bin &&
         cp launch.sh $out/bin/launch-development-environment &&
 	chmod 0555 $out/bin/launch-development-environment
-  '';
-  postInstallPhase = ''
-    EXE=$out/bin/launch-development-environment &&
         mkdir $out/share &&
     	mkdir $out/share/bash-completion &&
     	mkdir $out/share/bash-completion/completions
