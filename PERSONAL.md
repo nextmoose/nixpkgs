@@ -15,7 +15,11 @@ cd $(mktemp -d) &&
    git fetch origin master &&
    git checkout origin/master &&
    nix build -A launch-development-environment &&
-   ./result/bin/launch-development-environment
+   ./result/bin/launch-development-environment &&
 ```
 should be an error because you did not specify any of the required
-switches for the script
+switches for the script.
+
+```
+nix-env -i 
+```
