@@ -14,6 +14,6 @@ stdenv.mkDerivation {
         mkdir $out/share &&
     	mkdir $out/share/bash-completion &&
     	mkdir $out/share/bash-completion/completions
-    	cp completion.sh > $out/share/bash-completion/completions/launch-development-environment
+    	cp completion.sh $out/share/bash-completion/completions/launch-development-environment
     '';
 }
