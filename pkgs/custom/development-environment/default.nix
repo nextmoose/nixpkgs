@@ -4,7 +4,7 @@ stdenv.mkDerivation {
   src = fetchgit {
     url = "https://github.com/nextmoose/development-environment.git";
     rev = "30d5db9b1d9db32bfbb0cc8106997744d63b3f7d";
-    sha256 = "1i6vbjr3aybr2bd1nc7yghqnv2j9f0iwpq0q5kbx2q2c4vrhy94n";
+    sha256 = "0kvqrhsw6sqqzc0rn6lb4k90v093f0q7197fiadwhj90s2vk7spa";
   };
   installPhase = ''
     mkdir $out/bin &&
