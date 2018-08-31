@@ -14,7 +14,7 @@ cd $(mktemp -d) &&
    git remote add origin https://github.com/nextmoose/nixpkgs.git &&
    git fetch origin master &&
    git checkout origin/master &&
-   nix build -A launch-development-environment &&
+   nix-build -A launch-development-environment &&
    ./result/bin/launch-development-environment &&
 ```
 should be an error because you did not specify any of the required
