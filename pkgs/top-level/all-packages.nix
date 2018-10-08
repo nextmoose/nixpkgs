@@ -10457,6 +10457,8 @@ with pkgs;
     extraOnly = true;
   };
 
+  libfoo = callPackage ../development/libraries/libfoo { };
+
   libfprint = callPackage ../development/libraries/libfprint { };
 
   libfpx = callPackage ../development/libraries/libfpx { };
